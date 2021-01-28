@@ -6,7 +6,13 @@ Router.get('/', (req, res) => {
   res.send({
     message: 'Welcome to Simple API validation',
     status: 'success',
-    data: {},
+    data: {
+      name: 'Victor Awotidebe',
+      github: '@debelistic',
+      email: 'victorawotidebe@gmail.com',
+      mobile: '09068577929',
+      twitter: '@debelistic',
+    },
   });
 });
 
