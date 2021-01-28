@@ -6,9 +6,7 @@ Router.get('/', (req, res) => {
   res.send({
     message: 'Welcome to Simple API validation',
     status: 'success',
-    data: {
-
-    },
+    data: {},
   });
 });
 
