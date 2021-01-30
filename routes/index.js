@@ -1,9 +1,10 @@
 const express = require('express');
 
 const Router = express.Router();
+const { Validate } = require('../controller');
 
 Router.get('/', (req, res) => {
-  res.send({
+  res.status(200).send({
     message: 'Welcome to Simple API validation',
     status: 'success',
     data: {
@@ -16,4 +17,5 @@ Router.get('/', (req, res) => {
   });
 });
 
+Router.post('/validate-rule', Validate);
 module.exports = Router;
